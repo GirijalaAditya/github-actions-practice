@@ -37,3 +37,17 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           echo OM NAMAHA SHIVAYA
+    
+  test:
+    runs-on: windows-latest
+    
+      steps:
+        - name: checkout
+          uses: actions/checkout@v2
+        - name: Test
+          run: echo Testing
+        - name: multi test
+          run: |
+            echo Test1
+            echo Test2
+            echo Test3
