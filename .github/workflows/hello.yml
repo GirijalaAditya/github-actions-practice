@@ -41,13 +41,13 @@ jobs:
   test:
     runs-on: windows-latest
     
-      steps:
-        - name: checkout
-          uses: actions/checkout@v2
-        - name: Test
-          run: echo Testing
-        - name: multi test
-          run: |
-            echo Test1
-            echo Test2
-            echo Test3
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: Test
+        run: echo Testing
+      - name: multi test
+        run: |
+          echo Test1
+          echo Test2
+          echo Test3
